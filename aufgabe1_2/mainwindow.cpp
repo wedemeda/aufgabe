@@ -19,8 +19,7 @@ void MainWindow::on_pushButton_clicked()
      double a = ui->side_a->text().toInt();
      double b = ui->side_b->text().toInt();
      double angl = ui->anglField->text().toInt();
-     double pi = double(M_PI);
-     if (ui->radButton->isChecked()) angl = (angl*180)/pi;
+     if (ui->gradButton->isChecked()) angl = qDegreesToRadians(angl);
      double c = qSqrt(a*a+b*b-2*a*b*qCos(angl));
      ui->result->setText(QString::number(c)+"  метров");
 
