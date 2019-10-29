@@ -45,7 +45,7 @@ void MainWindow::on_button_clicked()
 
 
       if (a==0.0&&b==0.0&&c==0.0)
-                   { ui->roots->setText("Нет корней!");}
+                   { ui->roots->setText("x = любое число");}
        else   if (a==0.0&&b==0.0)
                        { ui->roots->setText("Нет корней!");}
          else      if ((b==0.0)&&(c==0.0))
