@@ -25,7 +25,7 @@ void MainWindow::on_pushButton_clicked()
      if (a<=0.0||b<=0.0||angl<=0.0)
         { ui->result->setText("Вводимые значения должны быть > 0!");}
      else if ((ui->radButton->isChecked())&&(angl>M_PI))
-             {ui->result->setText("Значение угла не может быть > числи пи!");}
+             {ui->result->setText("Значение угла не может быть > числа пи!");}
          else if ((angl>180.0))
                  {ui->result->setText("Значение угла не может быть > 180!");}
 
